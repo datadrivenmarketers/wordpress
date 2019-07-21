@@ -1,0 +1,4 @@
+add_action('after_setup_theme', function() {
+	$file = get_stylesheet_directory() . '/footer.php';
+	touch($file);
+});
